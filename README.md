@@ -100,5 +100,5 @@ Webアプリケーション側では、機体構築における複雑な依存�
     *   **Human (Me):** PM / Architect / Tech Lead. 要件定義、ロジック設計、品質保証を担当。
     *   **AI (Copilot/ChatGPT):** Coder / Reviewer. 実装、単体テスト作成、シンタックスチェックを担当。
 *   **Methodology:**
-    *   AIに推測の余地を与えないレベルまで、自然言語による**厳密な仕様定義（Logic Design）**を作成。
+    *   AIに推測の余地を与えないレベルまで、自然言語による厳密な仕様定義（Logic Design）を作成。
     *   Markdownによる仕様書をSSOTとし、実装（Web/Bot）との乖離を防ぐ運用フローを確立。
