@@ -66,7 +66,7 @@ ARTS.No.：ARTSにつけられる番号。ARTS予約時に参照する。1〜4�
 通常、シナリオにおける所属文明の基準TLvは10とする。
 また、以下の表はあくまでも想定される水準にすぎない。
 ```
-![alt text](image.png)
+![機体性能基準表](mech_performance_table.png)
 ## ⚙️ WEAPON性能基準（Tlv.5〜20）
 ```
 WEAPONのTLvは、原則機体と同じ値になる。
@@ -75,14 +75,14 @@ TLv ≒ ((故障値) - 90) + (装填数 × 0.5)を基準として調整を行う
 装填数のないWEAPONの場合、故障値は「TLv.10のとき80」を基準にする。  
 「故障値」は信頼性の高さを、「装填数」は継戦能力の高さを示している。
 ```
-![alt text](image-1.png)
+![WEAPON性能基準表](weapon_performance_table.png)
 ## ⚡ アーツ性能基準（Tlv.5〜20）
 ```
 アーツの強さは「兵器の技術力（TLv）」と「従軍者の技能Lv」に依存する。
 アーツのTLvはWEAPONのものと同一として扱う。 
 主に基礎精度率（%補正）と特殊効果段階によって機体格差を設ける。
 ```
-![alt text](image-2.png)
+![アーツ性能基準表](arts_performance_table.png)
 
 ## CORE：ARTS
 ```
