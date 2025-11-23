@@ -215,12 +215,12 @@ h6,
         z-index: 101 !important;
     }
 
-    /* =========================================
-       2. トップページ（ヒーロー）の修正（Final版）
+/* =========================================
+       2. トップページ（ヒーロー）の修正（Color & Spacing Fix）
        ========================================= */
     .VPHero {
-        padding-top: 16px !important;
-        /* 全体を少し上に引き上げ */
+        /* ★ここ修正：16px -> 64px に増量して、画像を下に下ろす */
+        padding-top: 64px !important;
         padding-bottom: 48px !important;
         text-align: center !important;
     }
@@ -238,14 +238,13 @@ h6,
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        margin: 0 0 16px 0 !important;
-        /* 画像下の隙間を詰める */
+        margin: 0 0 24px 0 !important; /* 下の隙間も少し広げる */
         padding: 0 !important;
     }
 
     .VPHero .image-src {
-        position: static !important;
-        transform: none !important;
+        position: static !important; 
+        transform: none !important;  
         max-width: 80% !important;
         height: auto !important;
         display: block !important;
@@ -273,27 +272,26 @@ h6,
         white-space: normal !important;
         overflow-wrap: break-word !important;
         margin: 0 auto 8px auto !important;
-        /* タイトル下の隙間も少し詰める */
     }
 
     /* サブタイトル (統合運用型...) */
     .VPHero .text {
         font-size: 20px !important;
-        /* 少し大きくして強調 */
         font-weight: 700 !important;
         line-height: 1.4 !important;
         margin: 0 auto 12px auto !important;
         color: var(--vp-c-text-1) !important;
     }
 
-    /* ★復活！説明文 (WebアプリとBotが...) */
+    /* ★ここ修正：説明文 (WebアプリとBotが...)の色をPC版と統一 */
     .VPHero .tagline {
         display: block !important;
-        /* 非表示を解除！ */
         font-size: 14px !important;
         line-height: 1.6 !important;
         margin: 0 auto 24px auto !important;
-        color: var(--vp-c-text-2);
+        /* PC版と同じブランドカラーを指定 */
+        color: var(--vp-c-brand-2) !important; 
+        font-weight: 600 !important;
         white-space: normal !important;
     }
 
@@ -309,20 +307,13 @@ h6,
     .VPHero .actions .action {
         margin: 0 !important;
         width: auto !important;
-        /* ★ここ修正：横幅いっぱいを解除 */
     }
-
-    /* ボタン本体の整形 */
+    
     .VPHero .actions .VPButton {
         width: auto !important;
-        /* 中身に合わせる */
         min-width: 160px !important;
-        /* 最低限の幅は確保 */
         padding: 12px 32px !important;
-        /* 余白で大きさを調整 */
         font-size: 16px !important;
-        /* 文字サイズを戻す */
         border-radius: 4px !important;
-        /* 角丸を少し戻す */
     }
 }
