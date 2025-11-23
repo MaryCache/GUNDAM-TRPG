@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
     title: "GUNDAM-TRPG",
     description: "WebアプリとBotが連携する統合運用型TRPGシステム",
     lang: 'ja-JP',
@@ -88,4 +89,4 @@ export default defineConfig({
             provider: 'local'
         }
     }
-})
+}))
