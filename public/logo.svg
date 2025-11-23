@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#0B0C15"/>
+<path d="M256 100L400 180V340L256 420L112 340V180L256 100Z" stroke="#2D7FF9" stroke-width="20" fill="rgba(45, 127, 249, 0.1)"/>
+<path d="M256 140L360 200V320L256 380L152 320V200L256 140Z" stroke="#00E5FF" stroke-width="10"/>
+<circle cx="256" cy="260" r="40" fill="#FF3366"/>
+<path d="M256 260L400 180" stroke="#2D7FF9" stroke-width="5"/>
+<path d="M256 260L112 180" stroke="#2D7FF9" stroke-width="5"/>
+<path d="M256 260L256 420" stroke="#2D7FF9" stroke-width="5"/>
+<text x="256" y="480" font-family="Arial" font-size="40" fill="#2D7FF9" text-anchor="middle" letter-spacing="5">GUNDAM-TRPG</text>
+</svg>

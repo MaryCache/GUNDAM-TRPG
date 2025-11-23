@@ -1,0 +1,170 @@
+h4,
+h5,
+h6,
+.title {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Hero Section Styling */
+.VPHero .name {
+    background: -webkit-linear-gradient(120deg, #2D7FF9 30%, #00E5FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(45, 127, 249, 0.5));
+}
+
+.VPHero .text {
+    color: var(--vp-c-text-2);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+}
+
+.VPHero .tagline {
+    color: var(--vp-c-brand-2);
+    font-weight: 600;
+}
+
+/* Button Styling - Mechanical Look */
+.VPButton {
+    border-radius: 2px !important;
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.VPButton.brand {
+    background-color: rgba(45, 127, 249, 0.2);
+    border-color: var(--vp-c-brand-1);
+    color: var(--vp-c-brand-1);
+    box-shadow: 0 0 10px rgba(45, 127, 249, 0.2);
+}
+
+.VPButton.brand:hover {
+    background-color: var(--vp-c-brand-1);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(45, 127, 249, 0.6);
+}
+
+.VPButton.alt {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--vp-c-text-3);
+}
+
+.VPButton.alt:hover {
+    border-color: var(--vp-c-brand-2);
+    color: var(--vp-c-brand-2);
+}
+
+/* Feature Cards - Glassmorphism */
+.VPFeature {
+    background-color: rgba(22, 24, 38, 0.6) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--vp-c-border) !important;
+    border-radius: 4px !important;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.VPFeature:hover {
+    transform: translateY(-5px);
+    border-color: var(--vp-c-brand-1) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Code Blocks */
+.vp-doc div[class*='language-'] {
+    border-radius: 4px;
+    border: 1px solid var(--vp-c-border);
+    background-color: #08090F;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--vp-c-border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--vp-c-brand-1);
+}
+
+/* Hero Image Zoom */
+.VPHero .image-src {
+    transform: scale(1.5);
+    filter: drop-shadow(0 0 30px rgba(45, 127, 249, 0.3));
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.VPHero .image-src:hover {
+    transform: scale(1.55);
+    filter: drop-shadow(0 0 50px rgba(0, 229, 255, 0.5));
+}
+
+/* Page Transition Effects (View Transitions API) */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.4s;
+    mix-blend-mode: normal;
+}
+
+/* Outgoing page: Slide out to left with fade */
+::view-transition-old(root) {
+    animation-name: slide-out-left;
+}
+
+/* Incoming page: Slide in from right with slash effect */
+::view-transition-new(root) {
+    animation-name: slide-in-right;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@keyframes slide-out-left {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    to {
+        transform: translateX(-20px);
+        opacity: 0;
+        filter: blur(5px);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* Add a tech-overlay effect during transition */
+::view-transition-group(root) {
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hide Appearance Switch (Force Dark Mode UI) */
+.VPSwitchAppearance {
+    display: none !important;
+}

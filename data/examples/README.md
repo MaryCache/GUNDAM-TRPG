@@ -4,25 +4,25 @@
 
 ---
 
-## 📁 ファイル一覧
+## 📄 ページ一覧
 
 ### 🔫 サンプル武器
-- **[WEAPON_BeamRifle.md](WEAPON_BeamRifle.md)** - ビームライフル (TLv.10標準)
-- **[WEAPON_HeatHawk.md](WEAPON_HeatHawk.md)** - ヒートホーク (TLv.10近接)
-- **[WEAPON_HyperBazooka.md](WEAPON_HyperBazooka.md)** - ハイパーバズーカ (TLv.12重火器)
+- **[WEAPON_BeamRifle](WEAPON_BeamRifle.md)** - ビームライフル (TLv.10標準)
+- **[WEAPON_HeatHawk](WEAPON_HeatHawk.md)** - ヒートホーク (TLv.10近接)
+- **[WEAPON_HyperBazooka](WEAPON_HyperBazooka.md)** - ハイパーバズーカ (TLv.12重火器)
 
 ### ⚔️ サンプルARTS
-- **[ARTS_PrecisionShot.md](ARTS_PrecisionShot.md)** - 精密射撃 (標準射撃ARTS)
-- **[ARTS_SlashCharge.md](ARTS_SlashCharge.md)** - 斬撃突貫 (近接ARTS、部位選択権付き)
-- **[ARTS_HeavyBlast.md](ARTS_HeavyBlast.md)** - 重爆破射撃 (高威力ARTS、機動ペナルティ)
+- **[ARTS_PrecisionShot](ARTS_PrecisionShot.md)** - 精密射撃 (標準射撃ARTS)
+- **[ARTS_SlashCharge](ARTS_SlashCharge.md)** - 斬撃突貫 (近接ARTS、部位選択権付き)
+- **[ARTS_HeavyBlast](ARTS_HeavyBlast.md)** - 重爆破射撃 (高威力ARTS、機動ペナルティ)
 
 ### 🤖 サンプル機体
-- **[MS_GM_TLv10.md](MS_GM_TLv10.md)** - GM (Type:E, 初心者向けバランス型)
-- **[MS_ZakuII_TLv8.md](MS_ZakuII_TLv8.md)** - ザクII (Type:F, 低TLv量産機)
-- **[MS_Gelgoog_TLv12.md](MS_Gelgoog_TLv12.md)** - ゲルググ (Type:S, 高性能機)
+- **[MS_GM_TLv10](MS_GM_TLv10.md)** - GM (Type:E, 初心者向けバランス型)
+- **[MS_ZakuII_TLv8](MS_ZakuII_TLv8.md)** - ザクII (Type:F, 低TLv量産機)
+- **[MS_Gelgoog_TLv12](MS_Gelgoog_TLv12.md)** - ゲルググ (Type:S, 高性能機)
 
 ### 👤 サンプルキャラクター
-- **[CHARACTER_Amuro.md](CHARACTER_Amuro.md)** - アムロ・レイ (エースパイロット型)
+- **[CHARACTER_Amuro](CHARACTER_Amuro.md)** - アムロ・レイ (エースパイロット型)
 
 ---
 
