@@ -216,34 +216,61 @@ h6,
     }
 
     /* =========================================
-       2. トップページ（ヒーロー）の修正（完全版）
+       2. トップページ（ヒーロー）の修正（画像トップ版）
        ========================================= */
     .VPHero {
         padding-top: 32px !important;
         padding-bottom: 48px !important;
         text-align: center !important;
-        /* 全体のテキストを中央寄せ */
     }
 
-    /* コンテナ: 縦並びにして中央配置を強制 */
     .VPHero .container {
         display: flex !important;
         flex-direction: column !important;
-        /* 確実に縦方向に並べる */
         align-items: center !important;
-        /* 横方向の中央揃え */
-        justify-content: center !important;
     }
 
-    /* ---------- 上段：テキストブロック ---------- */
+    /* ---------- 1. 画像ブロック (一番上) ---------- */
+    .VPHero .image {
+        width: 100% !important;
+        order: 1 !important;
+        /* 1番目に表示！ */
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 0 32px 0 !important;
+        /* 下に余白を開ける */
+        padding: 0 !important;
+        /* 余計なパディングを削除 */
+    }
+
+    /* 画像本体 */
+    .VPHero .image-src {
+        position: static !important;
+        transform: none !important;
+        max-width: 80% !important;
+        /* 大きすぎないように */
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+        /* 左右中央揃えを強制 */
+        left: auto !important;
+        /* 位置ズレの元凶を無効化 */
+        right: auto !important;
+    }
+
+    /* 背景の装飾（モヤモヤ）は非表示 */
+    .VPHero .image-bg {
+        display: none !important;
+    }
+
+    /* ---------- 2. テキストブロック (画像の下) ---------- */
     .VPHero .main {
         width: 100% !important;
-        max-width: 90% !important;
-        /* 画面端に少し余白を */
-        order: 1 !important;
-        /* 最優先で上に表示 */
-        margin-bottom: 40px !important;
-        /* 画像との間隔を空ける */
+        max-width: 95% !important;
+        order: 2 !important;
+        /* 2番目に表示！ */
+        margin: 0 auto !important;
     }
 
     /* タイトル */
@@ -251,10 +278,9 @@ h6,
         font-size: 32px !important;
         line-height: 1.3 !important;
         white-space: normal !important;
-        /* 折り返し許可 */
         overflow-wrap: break-word !important;
-        /* 長い単語も強制折り返し */
         margin: 0 auto 16px auto !important;
+        text-align: center !important;
     }
 
     /* 説明文 */
@@ -263,77 +289,32 @@ h6,
         line-height: 1.6 !important;
         margin: 0 auto 24px auto !important;
         color: var(--vp-c-text-2);
-        /* 少し落ち着いた色に */
+        text-align: center !important;
     }
 
-    /* タグライン（もしあれば邪魔なので消す） */
+    /* タグライン非表示 */
     .VPHero .tagline {
         display: none !important;
     }
 
-    /* ボタンエリア */
+    /* ---------- 3. ボタン (テキストの下) ---------- */
     .VPHero .actions {
         display: flex !important;
         flex-direction: column !important;
-        /* ボタンも縦並びに */
         align-items: center !important;
         gap: 16px !important;
-        /* ボタン間の隙間 */
+        padding-bottom: 24px !important;
     }
 
     .VPHero .actions .action {
         margin: 0 !important;
         width: 100% !important;
         max-width: 280px !important;
-        /* ボタンが横に伸びすぎないように制限 */
     }
 
-    /* ボタン自体の調整 */
     .VPHero .actions .VPButton {
         width: 100% !important;
         justify-content: center !important;
         padding: 14px 24px !important;
-        /* 少し大きめにして押しやすく */
-    }
-
-    /* ---------- 下段：画像ブロック ---------- */
-    .VPHero .image {
-        width: 100% !important;
-        order: 2 !important;
-        /* テキストの下に表示 */
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        /* PC用の特殊な配置設定をリセット */
-        position: static !important;
-        margin: 0 !important;
-    }
-
-    /* 画像本体 */
-    .VPHero .image-src {
-        /* PC用の変形や絶対配置を解除 */
-        position: static !important;
-        transform: none !important;
-
-        max-width: 85% !important;
-        /* 画面幅に対して程よい大きさに */
-        height: auto !important;
-        display: block !important;
-        border-radius: 12px;
-        /* 好みで：少し角を丸くする */
-    }
-
-    /* 背景の装飾（モヤモヤ）が邪魔なら隠す */
-    .VPHero .image-bg {
-        display: none !important;
-    }
-
-    /* =========================================
-       3. その他の調整（そのまま維持）
-       ========================================= */
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
     }
 }
