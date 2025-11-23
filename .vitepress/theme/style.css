@@ -168,3 +168,90 @@ h6,
 .VPSwitchAppearance {
     display: none !important;
 }
+
+/* 📱 スマートフォン向け強力補正 (Mobile Optimized) */
+@media (max-width: 768px) {
+
+    /* =========================================
+       1. ヘッダーの固定化 (Sticky Header)
+       ========================================= */
+    .VPNav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        /* 背景を少し濃くして文字を見やすく */
+        background-color: rgba(22, 24, 38, 0.95) !important;
+        backdrop-filter: blur(10px);
+    }
+
+    /* ヘッダーが浮く分、本文が隠れないように余白を追加 */
+    .VPContent {
+        padding-top: var(--vp-nav-height) !important;
+    }
+
+    /* =========================================
+       2. トップページ（Hero）の崩れ修正
+       ========================================= */
+    .VPHero {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+        overflow-x: hidden;
+        /* 横はみ出しを防止 */
+    }
+
+    /* タイトル: サイズを下げて、強制的に折り返す */
+    .VPHero .name {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        white-space: normal !important;
+        /* 改行を許可 */
+        word-wrap: break-word !important;
+        /* 長い単語も折り返す */
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* サブタイトル: サイズ調整 */
+    .VPHero .text {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        text-align: center;
+        margin: 0 auto !important;
+        max-width: 90% !important;
+        /* 画面端にベタ付きさせない */
+    }
+
+    /* タグライン（キャッチコピー） */
+    .VPHero .tagline {
+        font-size: 14px !important;
+        padding-top: 8px !important;
+    }
+
+    /* 画像: 画面からはみ出ないように縮小 */
+    .VPHero .image-src {
+        transform: scale(1.0) !important;
+        max-width: 60% !important;
+        /* 画像を少し控えめに */
+        height: auto !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* アクションボタン: 縦並びにして押しやすく */
+    .VPHero .actions .action {
+        margin-bottom: 8px;
+    }
+
+    /* =========================================
+       3. Features（3つの四角い箱）の調整
+       ========================================= */
+    .VPFeatures {
+        padding: 0 16px !important;
+    }
+
+    .VPFeature {
+        margin-bottom: 12px !important;
+    }
+}
