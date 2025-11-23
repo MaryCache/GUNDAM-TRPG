@@ -10,6 +10,7 @@ export default withMermaid(defineConfig({
     appearance: 'dark', // Force dark mode
 
     head: [
+        ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
         ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
         ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap' }]
