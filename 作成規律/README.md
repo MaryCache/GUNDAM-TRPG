@@ -64,6 +64,6 @@
 
 ## 📖 関連ドキュメント
 
-- [QUICKSTART.md](../QUICKSTART.md) - 初心者向けガイド
-- [GLOSSARY.md](../GLOSSARY.md) - 用語集
+- [用語集](../用語集.md)
+- [クイックスタート](../クイックスタート.md)
 - [サンプルデータ](../data/examples/) - 参考になる機体・キャラクター例

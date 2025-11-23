@@ -84,5 +84,5 @@ END PHASE
 ## 📖 関連ドキュメント
 
 - [同調率システム](../進行規律/同調率.md) - 同調率の倍率テーブルと影響
-- [GLOSSARY.md](../GLOSSARY.md) - 用語集
+- [用語集](../用語集.md)
 - [CORE:ARTS一覧](../作成規律/CORE_ARTS.md) - 標準装備の4つのARTS
