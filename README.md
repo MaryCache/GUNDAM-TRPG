@@ -6,6 +6,17 @@
 >
 > This repository serves as the **Single Source of Truth** for the entire ecosystem, defining the domain logic, data schemas, and state machine architecture used across the frontend (Web) and backend (Bot).
 
+## 📚 Rulebook & Documents
+
+プレイヤー・GM向けのドキュメントはこちら:
+
+- **[クイックスタート](クイックスタート.md)** 🚀 - 5分で始めるガイド
+- **[用語集](用語集.md)** 📖 - 全用語の解説
+- **[作成規律](作成規律/README.md)** 🛠️ - キャラクター・機体作成ルール
+- **[戦闘処理](戦闘処理/README.md)** ⚔️ - 戦闘システム詳細
+- **[進行規律](進行規律/README.md)** 🎲 - 判定・同調率システム
+- **[サンプルデータ](data/examples/README.md)** 💾 - 機体・武器・キャラの例
+
 ## 1. System Architecture
 
 本プロジェクトは、以下の4つのコンポーネントが疎結合に連携する分散型システムとして構築されています。
