@@ -9,11 +9,22 @@ export default withMermaid(defineConfig({
     srcDir: '.',
     appearance: 'dark', // Force dark mode
 
+    // サイトマップ生成
+    sitemap: {
+        hostname: 'https://gundam-trpg-dxsch2hr5-marycaches-projects.vercel.app'
+    },
+
     head: [
         ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
         ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
         ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap' }]
+        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap' }],
+        // OGP設定
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:locale', content: 'ja_JP' }],
+        ['meta', { property: 'og:title', content: 'GUNDAM-TRPG | 統合運用型TRPGシステム' }],
+        ['meta', { property: 'og:site_name', content: 'GUNDAM-TRPG' }],
+        ['meta', { property: 'og:description', content: 'WebアプリとBotが連携する統合運用型TRPGシステム' }]
     ],
 
     themeConfig: {
@@ -82,7 +93,7 @@ export default withMermaid(defineConfig({
         ],
 
         footer: {
-            message: 'Released under the MIT License.',
+            message: 'Contact: cachela824@gmail.com | Released under the MIT License.',
             copyright: 'Copyright © 2025 GUNDAM-TRPG Project'
         },
 
