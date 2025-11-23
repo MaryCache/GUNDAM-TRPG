@@ -5,28 +5,15 @@ export default withMermaid(defineConfig({
     title: "GUNDAM-TRPG",
     description: "WebアプリとBotが連携する統合運用型TRPGシステム",
     lang: 'ja-JP',
-    cleanUrls: true,
-    srcDir: '.',
-    appearance: 'dark', // Force dark mode
-
-    // サイトマップ生成
-    sitemap: {
-        hostname: 'https://gundam-trpg-dxsch2hr5-marycaches-projects.vercel.app'
-    },
-
-    head: [
-        ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
-        ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-        ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap' }],
-        // OGP設定
-        ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:locale', content: 'ja_JP' }],
-        ['meta', { property: 'og:title', content: 'GUNDAM-TRPG | 統合運用型TRPGシステム' }],
-        ['meta', { property: 'og:site_name', content: 'GUNDAM-TRPG' }],
-        ['meta', { property: 'og:description', content: 'WebアプリとBotが連携する統合運用型TRPGシステム' }],
-        // Google Search Console Verification
-        ['meta', { name: 'google-site-verification', content: 'EosKZD-Qt8B1OpHyjpueXJqlAMnkEJA_iGa6BXDA2Eo' }]
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap' }],
+    // OGP設定
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'ja_JP' }],
+    ['meta', { property: 'og:title', content: 'GUNDAM-TRPG | 統合運用型TRPGシステム' }],
+    ['meta', { property: 'og:site_name', content: 'GUNDAM-TRPG' }],
+    ['meta', { property: 'og:description', content: 'WebアプリとBotが連携する統合運用型TRPGシステム' }],
+    // Google Search Console Verification
+    ['meta', { name: 'google-site-verification', content: 'EosKZD-Qt8B1OpHyjpueXJqlAMnkEJA_iGa6BXDA2Eo' }]
     ],
 
     themeConfig: {
