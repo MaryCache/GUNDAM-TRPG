@@ -40,6 +40,7 @@ export default withMermaid(defineConfig({
                 items: [
                     { text: 'クイックスタート', link: '/クイックスタート' },
                     { text: '用語集', link: '/用語集' },
+                    { text: '利用規約', link: '/license' },
                     { text: 'エコシステム概要', link: '/README' }
                 ]
             },
