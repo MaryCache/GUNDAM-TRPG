@@ -31,7 +31,8 @@ export default withMermaid(defineConfig({
             { text: 'ホーム', link: '/' },
             { text: 'クイックスタート', link: '/クイックスタート' },
             { text: '用語集', link: '/用語集' },
-            { text: 'GitHub', link: 'https://github.com/MaryCache/GUNDAM-TRPG' }
+            { text: 'GitHub', link: 'https://github.com/MaryCache/GUNDAM-TRPG' },
+            { text: '利用規約', link: '/license' }
         ],
 
         sidebar: [
