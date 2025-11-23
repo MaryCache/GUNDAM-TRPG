@@ -169,89 +169,118 @@ h6,
     display: none !important;
 }
 
-/* 📱 スマートフォン向け強力補正 (Mobile Optimized) */
+/* 📱 スマートフォン向け完全調整 (Mobile Optimized) */
 @media (max-width: 768px) {
 
     /* =========================================
-       1. ヘッダーの固定化 (Sticky Header)
+       1. ヘッダー＆メニューバーの「2段固定」
        ========================================= */
+
+    /* 1段目: ロゴなどのメインヘッダー */
     .VPNav {
         position: fixed !important;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 100;
-        /* 背景を少し濃くして文字を見やすく */
-        background-color: rgba(22, 24, 38, 0.95) !important;
-        backdrop-filter: blur(10px);
+        background-color: var(--vp-c-bg) !important;
+        /* 背景色を透過させない */
+        border-bottom: 1px solid var(--vp-c-divider);
     }
 
-    /* ヘッダーが浮く分、本文が隠れないように余白を追加 */
+    /* 2段目: 「Menu」ボタンやパンくずリストがあるバー */
+    .VPLocalNav {
+        position: fixed !important;
+        top: var(--vp-nav-height) !important;
+        /* 1段目の真下に配置 */
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: var(--vp-c-bg) !important;
+        border-bottom: 1px solid var(--vp-c-divider);
+        display: block !important;
+        /* 強制表示 */
+    }
+
+    /* 本文: 2段分の高さ(約110px)を空けて、隠れないようにする */
     .VPContent {
-        padding-top: var(--vp-nav-height) !important;
+        padding-top: calc(var(--vp-nav-height) + 48px) !important;
+    }
+
+    /* サイドバー（メニューを開いた時）の位置調整 */
+    .VPSidebar {
+        top: calc(var(--vp-nav-height) + 48px) !important;
+        /* 2段分の下から開始 */
+        padding-bottom: 120px !important;
+        z-index: 101 !important;
     }
 
     /* =========================================
-       2. トップページ（Hero）の崩れ修正
+       2. トップページ（ヒーロー）の修正
        ========================================= */
     .VPHero {
         padding-top: 32px !important;
-        padding-bottom: 32px !important;
-        overflow-x: hidden;
-        /* 横はみ出しを防止 */
+        padding-bottom: 64px !important;
     }
 
-    /* タイトル: サイズを下げて、強制的に折り返す */
+    /* コンテナ: 縦並びにして中央揃え */
+    .VPHero .container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        /* これで左右の真ん中に来る */
+        text-align: center !important;
+    }
+
+    /* タイトル周りの調整 */
+    .VPHero .main {
+        width: 100% !important;
+        order: 1;
+        /* テキストを上に */
+    }
+
     .VPHero .name {
         font-size: 32px !important;
         line-height: 1.2 !important;
         white-space: normal !important;
-        /* 改行を許可 */
-        word-wrap: break-word !important;
-        /* 長い単語も折り返す */
-        text-align: center;
+        /* 折り返し許可 */
+        overflow-wrap: break-word !important;
         max-width: 100%;
+        margin: 0 auto;
     }
 
-    /* サブタイトル: サイズ調整 */
     .VPHero .text {
         font-size: 16px !important;
-        line-height: 1.5 !important;
-        text-align: center;
-        margin: 0 auto !important;
         max-width: 90% !important;
-        /* 画面端にベタ付きさせない */
+        margin: 16px auto !important;
     }
 
-    /* タグライン（キャッチコピー） */
-    .VPHero .tagline {
-        font-size: 14px !important;
-        padding-top: 8px !important;
+    /* 画像周りの調整 */
+    .VPHero .image {
+        width: 100% !important;
+        order: 2;
+        /* 画像を下に */
+        display: flex !important;
+        justify-content: center !important;
+        /* 画像コンテナの中央寄せ */
+        margin-top: 32px !important;
     }
 
-    /* 画像: 画面からはみ出ないように縮小 */
     .VPHero .image-src {
         transform: scale(1.0) !important;
-        max-width: 60% !important;
-        /* 画像を少し控えめに */
+        max-width: 80% !important;
+        /* 画面幅の8割くらいに */
         height: auto !important;
-        margin: 0 auto;
-        display: block;
-    }
-
-    /* アクションボタン: 縦並びにして押しやすく */
-    .VPHero .actions .action {
-        margin-bottom: 8px;
+        display: block !important;
     }
 
     /* =========================================
-       3. Features（3つの四角い箱）の調整
+       3. その他の調整
        ========================================= */
-    .VPFeatures {
-        padding: 0 16px !important;
-    }
-
-    .VPFeature {
-        margin-bottom: 12px !important;
+    /* テーブルの横スクロール */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
