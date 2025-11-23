@@ -24,7 +24,9 @@ export default withMermaid(defineConfig({
         ['meta', { property: 'og:locale', content: 'ja_JP' }],
         ['meta', { property: 'og:title', content: 'GUNDAM-TRPG | 統合運用型TRPGシステム' }],
         ['meta', { property: 'og:site_name', content: 'GUNDAM-TRPG' }],
-        ['meta', { property: 'og:description', content: 'WebアプリとBotが連携する統合運用型TRPGシステム' }]
+        ['meta', { property: 'og:description', content: 'WebアプリとBotが連携する統合運用型TRPGシステム' }],
+        // Google Search Console Verification
+        ['meta', { name: 'google-site-verification', content: 'EosKZD-Qt8B1OpHyjpueXJqlAMnkEJA_iGa6BXDA2Eo' }]
     ],
 
     themeConfig: {
